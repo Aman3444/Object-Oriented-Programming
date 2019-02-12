@@ -1,0 +1,69 @@
+public class Assign1
+{
+   // draw four triangles
+   public static void main( String args[] )
+   {
+      int i; // the row position
+      int j; // the column position
+      int space; // number of spaces to print
+
+      // first triangle
+      /* Write code to display the first triangle. Use nested for loops. The 
+         outer loop should control which row of asterisks is being displayed.
+         The inner loop should display one asterisk at a time. */
+        for(i=1;i<11;i++)
+        {
+            for(j=0; j < i; j++){
+                System.out.print("*");
+            }
+            System.out.println("");
+        }
+
+      // second triangle
+      /* Write code to display the second triangle. */
+        System.out.print("\n");
+
+        for(i=10;i>0;i--)
+        {
+            for(j=0; j < i; j++){
+                System.out.print("*");
+            }
+            System.out.println("");
+
+        }
+
+
+      // third triangle
+      /* Write code to display the third triangle. The outer for loop should
+         contain two separate inner for loops--one to display spaces and one to
+         display asterisks. */
+         System.out.print("\n");
+         for(i=0; i < 10; i++)
+         {
+             for(j=0; j < i; j++){
+                 System.out.print(" ");
+             }
+             for(j=0; j < 10-i; j++){
+                 System.out.print("*");
+             }
+             System.out.println();
+         }
+
+      // fourth triangle
+      /* Write code to display the fourth triangle using techniques similar to
+         the third triangle. */
+
+         for(i=10; i>0; i--)
+         {
+             for(j=0; j < i; j++){
+                 System.out.print(" ");
+             }
+             for(j=0; j < 10-i; j++){
+                 System.out.print("*");
+             }
+             System.out.println();
+         }
+
+
+   } // end main
+} // end class Triangles
